@@ -1,0 +1,65 @@
+body {
+    background-color: aqua;
+}
+
+
+header {
+    display: flex;
+    background-color: black;
+    color: blanchedalmond;
+    font-size: 16px;
+    font-weight: bold;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+
+}
+
+header a {
+    color: blanchedalmond;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header > nav > ul > li > a {
+    list-style: none;
+    color: blanchedalmond;
+
+}
+
+header > nav > ul {
+    display: flex;
+    color: blanchedalmond;
+    flex-direction: row;
+    text-decoration: none;
+    text-transform: uppercase;
+    gap: 32px;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    flex: 1 1 200;
+}
+
+section > div {
+    margin: 20px;
+
+}
+
+section > div > p {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+section > div > img {
+    width: 200px;
+    height: 200px;
+    
+
+}
