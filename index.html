@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendendo Portas Lógica</title>
 
-    <link rel="stylesheet" href="./styles/stytes.css">
+    <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/movel.css">
     <link rel="shortcut icon" href="./ICO/logic_gate.ico" type="image/x-icon">
     <script>
@@ -28,29 +28,80 @@
     </header>
         <h1> Pota Lógicas Guia Interativo</h1>
         <p id="paragrafo01"> Aprenda sobre a base da eletrônica digital com as portas lógicas</p>
+        <nav aria-label="Menu Principal das Portas Lógicas">
+            <ul>
+                <li><a href="#porta-and">AND/E</a></li>
+                <li><a href="#porta-or">OR/OU</a></li>
+                <li><a href="#porta-buffer">BUFFER</a></li>
+                <li><a href="#porta-nand">NAND</a></li>
+                <li><a href="#porta-nor">NOR</a></li>
+            </ul>
+        </nav>
 
-        <section class="flex">
+        <section id="porta-and" class="flex">
+            <h2>Porta Lógica AND/E</h2>
+            <p class="descricao-porta">A porta lógica AND é um circuito eletrônico que funciona como uma multiplicação lógica, produzindo uma saída em nível alto (1) somente se todas as suas entradas estiverem em nível alto (1). A saída é baixa (0) se qualquer uma das entradas para baixa (0). Essa porta é fundamental em circuitos digitais para realizar operações como comparação de bits ou controle de fluxo de dados.  </p>
+        
             <div>
-                <img src="./imagens/logic-gates-and.jpg" alt="Essa é porta logica and com duas entradas e uma saída">
+                <img src="./imagens/logic-gates-and.jpg" alt="Essa é porta logica AND com duas entradas e uma saída">
                 <p>Porta Lógica AND</p>
             </div>
+        </section>
+
+        <section id="porta-or" class="flex">
+            <h2>Porta Lógica OR/OU</h2>
+            <p class="descricao-porta">A porta lógica OR é um circuito eletrônico que funciona como uma adição lógica, produzindo uma saída em nível alto (1) se pelo menos uma de suas entradas estiver em nível alto (1). A saída é baixa (0) somente se todas as entradas estiverem em nível baixo (0). Essa porta é fundamental em circuitos digitais para realizar operações como comparação de bits ou controle de fluxo de dados.  </p>
+        
             <div>
-                <img src="./imagens/logic-gates-buffer.jpg" alt="Esse é um buffer porta que amplia a entrada">
-                <p>Buffer</p>
-            </div>
-            <div>
-                <img src="./imagens/logic-gates-nand.jpg" alt="Essa é uma porta NAND com duas entradas e uma saída">
-                <p>Porta Lógica NAND</p>
-            </div>
-            <div>
-                <img src="./imagens/logic-gates-or.jpg" alt="Essa é uma porta OR com duas entradas e uma saída">
+                <img src="./imagens/logic-gates-or.jpg" alt="Essa é porta logica OR com duas entradas e uma saída">
                 <p>Porta Lógica OR</p>
             </div>
+        </section>
+
+        <section id="porta-buffer" class="flex">
+            <h2>Porta Lógica BUFFER</h2>
+            <p>Porta lógica BUFFER com uma entrada e uma saída amplificada  </p>
+        
             <div>
-                <img src="./imagens/logic-gates-nor.jpg" alt="Essa é uma porta NOR com duas entradas e uma saída">
-                <p>Porta Lógica NOR</p>
+                <img src="./imagens/logic-gates-buffer.jpg" alt="Essa é porta logica NOT com duas entradas e uma saída">
+                <p>Porta Lógica NOT</p>
             </div>
         </section>
+
+
+
+
+
+
+        
+  <footer>
+    <p>Portas Lógicas a Base para a Eletrônica Digital</p>
+    <p>&copy; 2025 Projeto Orientado de Portas Lógicas | Desenvolvido por [Gilmar Rodrigues Campelo]</p>
+
+     <div class="resource-card">
+                        <h3><i class="fas fa-external-link-alt"></i> Links Úteis</h3>
+                        <ul class="links-list">
+                            <li><a href="https://pt.wikipedia.org/wiki/Porta_l%C3%B3gica" target="_blank" rel="noopener noreferrer">Porta Lógica na Wikipédia</a></li>
+                            <li><a href="https://www.khanacademy.org/computing/computers-and-internet" target="_blank" rel="noopener noreferrer">Khan Academy - Computação</a></li>
+                            <li><a href="https://logic.ly/demo/" target="_blank" rel="noopener noreferrer">Logicly - Simulador Online</a></li>
+                            <li><a href="https://www.tinkercad.com/circuits" target="_blank" rel="noopener noreferrer">Tinkercad - Circuitos</a></li>
+                        </ul>
+                    </div>
+
+  </footer>
+
+  <!-- VLibras Widget -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
     
 </body>
 </html>
