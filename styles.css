@@ -17,6 +17,7 @@
     header {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         width: 100%;
         margin: 3px;
         background-color: #000;
@@ -57,6 +58,7 @@
     main {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         margin: 3px;
         gap: 20px;
         width: 100%;
@@ -147,6 +149,7 @@
 
     footer {
         display: flex;
+        flex-wrap: wrap;
         margin: 3px;
         flex: 1 1 100vw;
         width: 100%;
@@ -165,6 +168,17 @@
         text-align: center;
     }
 
-    @media screen {
-        
+    .redesSociais {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 35px;
+        margin-top: 10px;
+    }
+
+    .redesSociais a {
+        color: white;
+        font-size: 15px;
+        text-decoration: none;
+        transition: color 0.3s;
     }
