@@ -111,6 +111,14 @@
         
     }
 
+    .texto-ruim {
+        margin: auto;
+        color: black;
+        font-size: 16px;
+        padding: 10px;
+        font-weight: bold;
+    }
+
     .botoes {
         display: flex;
         margin: 20px 0;
@@ -138,9 +146,14 @@
     #imagem01 {
         display: flex;
         max-width: 250px; 
-        height: auto;
-        
-       
+        height: auto;   
+    }
+
+    #texto-imagem01 {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 10px;
+        color: black;
     }
 
 
@@ -179,3 +192,36 @@
         text-decoration: none;
         transition: color 0.3s;
     }
+
+
+    @media (max-width: 1024px) {
+
+    body {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    
+
+    #imagem01 {
+        max-width: 180px;
+        margin: 20px auto;
+    }
+
+    #texto-imagem01 {
+        font-size: 12px;
+    }
+
+
+   
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
